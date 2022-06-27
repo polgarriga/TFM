@@ -48,23 +48,23 @@ def evaluate(ref, hyp, name):
     print(f"TER score for {name} is {round(average, 3)}")
     return ter_score, average
 
-# evaluate(ref_flores_ca, hyp_flores_ca_soft, "Softcatalà, de->ca, FLoRes")
-# evaluate(ref_flores_de, hyp_flores_de_soft, "Softcatalà, ca->de, FLoRes")
-# evaluate(ref_wmt_ca, hyp_wmt_ca_soft, "Softcatalà, de->ca, wmt")
-# evaluate(ref_wmt_de, hyp_wmt_de_soft, "Softcatalà, ca->de, wmt")
+evaluate(ref_flores_ca, hyp_flores_ca_soft, "Softcatalà, de->ca, FLoRes")
+evaluate(ref_flores_de, hyp_flores_de_soft, "Softcatalà, ca->de, FLoRes")
+evaluate(ref_wmt_ca, hyp_wmt_ca_soft, "Softcatalà, de->ca, wmt")
+evaluate(ref_wmt_de, hyp_wmt_de_soft, "Softcatalà, ca->de, wmt")
 
-# evaluate(ref_flores_ca, hyp_flores_ca_google, "Google, de->ca, FLoRes")
-# evaluate(ref_flores_de, hyp_flores_de_google, "Google, ca->de, FLoRes")
-# evaluate(ref_wmt_ca, hyp_wmt_ca_google, "Google, de->ca, wmt")
-# evaluate(ref_wmt_de, hyp_wmt_de_google, "Google, ca->de, wmt")
+evaluate(ref_flores_ca, hyp_flores_ca_google, "Google, de->ca, FLoRes")
+evaluate(ref_flores_de, hyp_flores_de_google, "Google, ca->de, FLoRes")
+evaluate(ref_wmt_ca, hyp_wmt_ca_google, "Google, de->ca, wmt")
+evaluate(ref_wmt_de, hyp_wmt_de_google, "Google, ca->de, wmt")
 
-# evaluate(ref_flores_ca, hyp_flores_ca_m2m, "M2M100, de->ca, FLoRes")
-# evaluate(ref_flores_de, hyp_flores_de_m2m, "M2M100, ca->de, FLoRes")
-# evaluate(ref_wmt_ca, hyp_wmt_ca_m2m, "M2M100, de->ca, wmt")
-# evaluate(ref_wmt_de, hyp_wmt_de_m2m, "M2M100, ca->de, wmt")
+evaluate(ref_flores_ca, hyp_flores_ca_m2m, "M2M100, de->ca, FLoRes")
+evaluate(ref_flores_de, hyp_flores_de_m2m, "M2M100, ca->de, FLoRes")
+evaluate(ref_wmt_ca, hyp_wmt_ca_m2m, "M2M100, de->ca, wmt")
+evaluate(ref_wmt_de, hyp_wmt_de_m2m, "M2M100, ca->de, wmt")
 
-# evaluate(ref_flores_ca, hyp_flores_ca_fft, "FFT, de->ca, FLoRes")
-# evaluate(ref_wmt_ca, hyp_wmt_ca_fft, "FFT, de->ca, wmt")
+evaluate(ref_flores_ca, hyp_flores_ca_fft, "FFT, de->ca, FLoRes")
+evaluate(ref_wmt_ca, hyp_wmt_ca_fft, "FFT, de->ca, wmt")
 
 evaluate(ref_flores_ca, hyp_flores_ca_para, "para, de->ca, FLoRes")
 evaluate(ref_flores_de, hyp_flores_de_para, "para, ca->de, FLoRes")
